@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+   <groups>
+    <define name="Entertainment">
+      <include name="Music"></include>
+      <include name="Social Media"></include>
+      </define>
+      <run>
+      <exclude name="Entertainment"></exclude>
+      </run>
+     </groups>
+    <classes>
+      <class name="com.TestNG_Features.Group_Concepts"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
